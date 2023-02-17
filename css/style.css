@@ -1,0 +1,558 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #0e0e0e;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.container{
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.section-page{
+	padding: 100px 0;
+}
+.title{
+	text-align: center;
+	margin-bottom: 100px;
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 400;
+}
+/*-----------------------------------*/
+.header {
+	background-image: url('../images/header/bg.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 80px;
+	text-align: center;
+	position: relative;
+}
+.header::after{
+	content: '';
+	position: absolute;
+	height: 70px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.menu {
+	padding: 20px 0;
+	background: #000000;
+}
+.menu__btn{
+	display: none;
+}
+.menu__list {
+	display: flex;
+	justify-content: center;
+	
+}
+.menu__list-item {
+	padding: 0 13px;
+}
+.menu__list-link {
+	font-size: 36px;
+	line-height: 42px;
+	transition: all 0.3s;
+}
+.menu__list-link:hover{
+	color: #85ccdc;
+	text-decoration: underline;
+}
+.logo {
+	padding-top: 25vh;
+}
+.logo__img {
+}
+/*-----------------------------*/
+.about {
+}
+.container {
+}
+.title {
+}
+.about__inner {
+	display: flex;
+}
+.about__info {
+	width: 375px;
+	margin-right: 50px;
+	flex: none;
+}
+.about__info-item {
+	margin-bottom: 20px;
+}
+.about__info-item span{
+	display: block;
+}
+.about__text {
+}
+.about__text p{
+	margin-bottom: 30px;
+}
+/*---------------------------------*/
+.video {
+	background-image: url('../images/video/video-bg.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: right;
+}
+.container {
+}
+.video__text {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 84px;
+	color: #85CCDC;
+	padding-top: 40vh;
+	margin-bottom: 40px;
+}
+.video__text span{
+	display: block;
+	padding-right: 300px;
+}
+.video__btn {
+	padding-left: 112px;
+	position: relative;
+	margin-right: 230px;
+}
+.video__btn::before{
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: -40px;
+	background-image: url('../images/video/youtube.svg');
+}
+/*----------------------------------*/
+.seasons {
+}
+.section-page {
+}
+.container {
+}
+.title {
+}
+.seasons__inner {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+	grid-gap: 100px 75px;
+	counter-reset: my-counter;
+}
+.seasons__item {
+	/* width: 350px; */
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.seasons__item::before{
+	content: '0' counter(my-counter);
+	counter-increment: my-counter;
+	position: absolute;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 112px;
+	color: #600E09;
+	left: 0;
+	top: -70px;
+	z-index: -1;
+}
+.seasons__item:nth-child(n+10)::before{
+	content: counter(my-counter);
+}
+.seasons__item:hover::after{
+	content: '';
+	background: rgba(14, 14, 14, 0.8);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.seasons__link {
+	font-size: 36px;
+	line-height: 42px;
+	padding: 12px 80px;
+	background-color: #000;
+	opacity: 0;
+	transition: all 0.5s;
+	z-index: 2;
+}
+.seasons__item:hover .seasons__link{
+	opacity: 1;
+}
+/*---------------------------------------*/
+.heroes {
+}
+.section-page {
+}
+.container {
+}
+.title {
+}
+.heroes__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.heroes__slider-img {
+	max-width: 775px;
+}
+.heroes__img {
+}
+.heroes__slider-text {
+	max-width: 350px;
+}
+.slick-btn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	background-color: transparent;
+	z-index: 5;
+	cursor: pointer;
+}
+.slick-prev{
+	left: 38px;
+}
+.slick-next{
+	right: 38px;
+}
+.heroes__name {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 84px;
+	color: #85CCDC;
+	margin-bottom: 45px;
+}
+.heroes__text {
+}
+.heroes__text p{
+	padding-bottom: 30px;
+}
+/*------------------------------------*/
+.copy{
+	padding: 15px 0;
+	text-align: center;
+}
+/*--------------season-1---------------------*/
+.menu__container{
+	max-width: 1385px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu__list-link--active{
+	color: #85ccdc;
+	text-decoration: underline;
+}
+.page-header{
+	background-image: url('../images/season-1/seson-1-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.page-logo{
+	position: absolute;
+	left: 0;
+	z-index: 3;
+}
+.season-info {
+	position: absolute;
+	max-width: 1385px;
+	display: flex;
+	padding: 45px 45px 30px 35px;
+	background-color: #0E0E0E;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.season-info__num {
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 55px;
+	text-align: center;
+	margin-right: 40px;
+}
+.season-info__num span{
+	display: block;
+	font-size: 36px;
+	line-height: 42px;
+}
+.season-info__text {
+}
+.season-info__text p{
+	padding-bottom: 15px;
+}
+/*-------------------@media-------------------------*/
+
+@media(max-width: 1420px){
+	.page-logo{
+		left: 10px;
+	}
+}
+@media(max-width: 1365px){
+	.header{
+		background-position: center 55px;
+	}
+	.logo__img{
+		max-width: 60%;
+	}
+	.menu {
+		padding: 20px 0;
+	}
+	.menu__list-link {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.about__info{
+		width: 250px;
+	}
+	.page-logo{
+		top: -7px;
+	}
+}
+@media(max-width: 1215px){
+	.section-page {
+		padding: 50px 0;
+	}
+	.heroes__inner{
+		display: block;
+	}
+	.heroes__slider-img{
+		margin: 0 auto;
+	}
+	.heroes__name{
+		margin-top: 50px;
+	}
+	.heroes__slider-text{
+		max-width: 100%;
+	}
+}
+@media(max-width: 1115px){
+	.video__text{
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.video__text span {
+		padding-right: 210px;
+	}
+	.video__btn{
+		margin-right: 80px;
+	}
+	.page-header{
+		height: 120vh;
+	}
+	.page-logo{
+		display: none;
+	}
+}
+@media(max-width: 785px){
+	.about__inner{
+		display: block;
+	}
+	.section-page {
+		padding: 50px 0;
+	}
+	.title{
+		margin: 50px 0;
+	}
+	.about__info{
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.video__text{
+		font-size: 46px;
+		line-height: 52px;
+	}
+	.video__text span {
+		padding-right: 175px;
+	}
+	.video__btn{
+		margin-right: 20px;
+		padding-left: 82px;
+	}
+	.video__btn::before{
+		width: 70px;
+		height: 70px;
+		background-size: cover;
+		top: -26px;
+	}
+	.section-page {
+		padding: 0;
+	}
+	.seasons__inner{
+		grid-gap: 80px 35px;
+		padding-top: 50px;
+	}
+	.page-header {
+		height: 130vh;
+	}
+	.season-info{
+		display: block;
+	}
+	.season-info{
+		padding: 50px 10px 0 10px;
+	}
+	.season-info__num{
+		margin-bottom: 20px;
+		text-align: left;
+		font-size: 70px;
+		line-height: 44px;
+	}
+	.season-info__num span {
+		font-size: 32px;
+	}
+}
+@media(max-width: 655px){
+	.header {
+		background-position: center 0px;
+	}
+	.title{
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.menu{
+		padding: 0px;
+		background-color: transparent;
+		text-align: center;
+	}
+	.menu__list{
+		display: block;
+		transform: translateY(-130%);
+		transition: all 0.3s;
+	}
+	.menu__list.menu__list--active{
+		transform: translateY(0%);
+		padding-top: 70px;
+		background-color: rgba(0, 0, 0, 1);
+		position: absolute;
+		z-index: 5;
+		width: 100%;
+	}
+	.menu__list-link{
+		display: block;
+		padding: 10px 0;
+	}
+	.logo {
+		padding-top: 0vh;
+	}
+	.page-header {
+		height: 150vh;
+	}
+	.page-logo{
+		display: block;
+		z-index: 10;
+		top: 20px;
+		left: 20px;
+	}
+	.menu__btn{
+		display: block;
+		width: 35px;
+		height: 25px;
+		cursor: pointer;
+		position: absolute;
+		z-index: 10;
+		top: 20px;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+	}
+	.menu__btn span{
+		background-color: #fff;
+		height: 3px;
+		width: 100%;
+	}
+	.menu__btn::after,
+	.menu__btn::before{
+		content: '';
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		position: absolute;
+	}
+	.menu__btn::before{
+		top: 0;
+		left: 0;
+	}
+	.menu__btn::after{
+		bottom: 0;
+		left: 0;
+	}
+	.video__text{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.video__text span {
+		padding-right: 100px;
+	}
+	.video__btn{
+		font-size: 16px;
+		margin-right: 0;
+		padding-left: 55px;
+	}
+	.video__btn::before{
+		width: 50px;
+		height: 50px;
+		background-size: cover;
+		top: -16px;
+	}
+	.seasons__item{
+		height: 340px;
+	}
+	
+	.slick-btn{
+		display: none;
+	}
+	.heroes__name {
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 25px;
+	}
+}
+@media(max-width: 410px){
+	.video{
+		background-image: none;
+		height: 30vh;
+		padding-bottom: 0;
+	}
+	.video__text{
+		padding-top: 0;
+	}
+	.section-page {
+		padding-top: 0;
+	}
+	.seasons__item{
+		height: 220px;
+	}
+}
